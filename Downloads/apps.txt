@@ -1,0 +1,50 @@
+Amphetamine
+Android File Transfer
+App Store
+Audacity
+Authy Desktop
+balenaEtcher
+Bartender 3
+Clipy
+Dashlane
+Divvy
+FaceTime
+Figma
+Firefox
+Firefox Developer Edition
+Fork
+Gifski
+GIMP-2.10
+Google Chrome
+iTerm
+JetBrains Toolbox
+Kiwi for Gmail
+LibreOffice
+LICEcap
+Magnet
+Mail
+Maps
+Messages
+Microsoft Edge Dev
+Notion
+Rambox
+Rocket
+Scroll Reverser
+SmartCapsLock
+SmartGit
+Spotify
+SpotMenu
+Stickies
+Sublime Text
+System Preferences
+TextEdit
+Time Machine
+Typora
+uBar
+Unity Hub
+VirtualBox
+Visual Studio Code
+VLC
+Webex Teams
+Xcode
+Zeplin
