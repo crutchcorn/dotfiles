@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/ccrutchley/.oh-my-zsh"
+export ZSH="/Users/crutchcorn/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.profile
 
-DEFAULT_USER="ccrutchley@MEMHQFWN1RQHV2H"
+DEFAULT_USER="crutchcorn@MEMHQFWN1RQHV2H"
 prompt_context(){
   # Custom (Random emoji)
   emojis=("⚡️" "🔥" "💅" "👑" "😎" "💅" "✨" "🦄" "💅" "🌈" "🚀" "💅" "💡" "🎉" )
@@ -117,10 +117,12 @@ alias lz=exa
 alias trea=exa -T
 alias trer=exa -R
 alias npmm=yarn
-export ANDROID_SDK_ROOT=/Users/ccrutchley/Library/Android/sdk
-export PATH=/Users/ccrutchley/Jetbrains:$PATH
+export ANDROID_SDK_ROOT=/Users/crutchcorn/Library/Android/sdk
+export PATH=/Users/crutchcorn/Jetbrains:$PATH
 alias storybook="yarn storybook"
 alias mdToDocx="pandoc $1 -f markdown -t docx -s -o $2"
 alias yarn-check="yarn upgrade-interactive --latest"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+alias fileSize="du -h $1"
+alias gDiff="git diff --stat $1 $2 -- . ':(exclude)package-lock.json'"
 
