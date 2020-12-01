@@ -1,8 +1,12 @@
 adoptopenjdk8
+android-file-transfer
 android-platform-tools
 colorpicker-developer
+firefox
 font-fira-code
 java
+krita
+licecap
 menubar-colors
 qlcolorcode
 qlimagesize
@@ -15,4 +19,6 @@ quicklookase
 spotmenu
 sublime-text
 typora
+visual-studio-code
+vlc
 webpquicklook
