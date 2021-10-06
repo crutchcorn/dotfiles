@@ -38,9 +38,20 @@
         {
           "type": "git",
           "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#21222C",
-          "background": "#F1FA8C"
+          "powerline_symbol": "",
+          "foreground": "#193549",
+          "background": "#d2ff5e",
+          "properties": {
+            "display_stash_count": true,
+            "display_upstream_icon": true,
+            "status_colors_enabled": true,
+            "display_status": true,
+            "local_changes_color": "#f2b150",
+            "ahead_and_behind_color": "#f250c1",
+            "behind_color": "#f17c37",
+            "ahead_color": "#89d1dc",
+            "stash_count_icon": "\uF692 "
+          }
         },
         {
           "type": "exit",
