@@ -32,7 +32,7 @@
             "home_icon": "\uF7DB",
             "folder_icon": "\uF115",
             "folder_separator_icon": " \uE0B1 ",
-            "style": "full"
+              "style": "full"
           }
         },
         {
@@ -58,7 +58,12 @@
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
           "foreground": "#ffffff",
-          "background": "#F56B6C"
+          "background": "#F56B6C",
+          "properties": {
+            "error_icon": "\uf00d",
+            "always_numeric": true,
+            "display_exit_code": false
+          }
         },
         {
           "type": "text",
