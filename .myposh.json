@@ -6,76 +6,84 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "root",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": " \uf0e7 ",
           "foreground": "#100e23",
-          "background": "#ffe9aa"
+          "powerline_symbol": "\ue0b0",
+          "background": "#ffe9aa",
+          "type": "root",
+          "style": "powerline"
         },
         {
-          "type": "envvar",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": "{{ .Env.EMOJI_DISPLAY }}",
           "foreground": "#ffffff",
           "background": "#21222C",
+          "type": "text",
+          "style": "powerline"
+        },
+        {
           "properties": {
-            "var_name": "EMOJI_DISPLAY"
-          }
-        },
-        {
-          "type": "path",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
+            "cache_duration": "none",
+            "folder_icon": "\uf115",
+            "folder_separator_icon": " \ue0b1 ",
+            "home_icon": "\ueb06",
+            "style": "full"
+          },
+          "template": " {{ .Path }} ",
           "foreground": "#21222C",
+          "powerline_symbol": "\ue0b0",
           "background": "#BD93F9",
-          "properties" : {
-            "home_icon": "\uF7DB",
-            "folder_icon": "\uF115",
-            "folder_separator_icon": " \uE0B1 ",
-              "style": "full"
-          }
+          "type": "path",
+          "style": "powerline"
         },
         {
+          "properties": {
+            "cache_duration": "none",
+            "fetch_stash_count": true,
+            "fetch_status": true,
+            "fetch_upstream_icon": true
+          },
+          "template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+          "foreground": "#193549",
+          "powerline_symbol": "\ue0b0",
+          "background": "#d2ff5e",
           "type": "git",
           "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#193549",
-          "background": "#d2ff5e",
-          "properties": {
-            "display_stash_count": true,
-            "display_upstream_icon": true,
-            "status_colors_enabled": true,
-            "display_status": true,
-            "local_changes_color": "#f2b150",
-            "ahead_and_behind_color": "#f250c1",
-            "behind_color": "#f17c37",
-            "ahead_color": "#89d1dc",
-            "stash_count_icon": "\uF692 "
-          }
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#f2b150{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f250c1{{ end }}",
+            "{{ if gt .Ahead 0 }}#f17c37{{ end }}",
+            "{{ if gt .Behind 0 }}#89d1dc{{ end }}"
+          ]
         },
         {
-          "type": "exit",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
+          "properties": {
+            "cache_duration": "none"
+          },
+          "template": " {{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} ",
           "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
           "background": "#F56B6C",
-          "properties": {
-            "error_icon": "\uf00d",
-            "always_numeric": true,
-            "display_exit_code": false
-          }
+          "type": "exit",
+          "style": "powerline"
         },
         {
-          "type": "text",
-          "style": "plain",
-          "foreground": "#F1FA8C",
           "properties": {
-            "prefix": "",
-            "text": " \n↳"
-          }
+            "cache_duration": "none"
+          },
+          "template": "\n\u21b3 ",
+          "foreground": "#F1FA8C",
+          "type": "text",
+          "style": "plain"
         }
       ]
     }
   ],
+  "version": 3,
   "final_space": true
 }
